@@ -9,6 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { Page404Component } from './page404/page404.component';
 import { FormsModule } from '@angular/forms';
 import { NextPageComponent } from './next-page/next-page.component';
+import { ListeUserComponent } from './liste-user/liste-user.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { NextPageComponent } from './next-page/next-page.component';
     RegisterComponent,
     LoginComponent,
     Page404Component,
-    NextPageComponent
+    NextPageComponent,
+    ListeUserComponent,
+    AddUserComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,10 @@ import { RegisterComponent } from './register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Page404Component } from './page404/page404.component';
 import { NextPageComponent } from './next-page/next-page.component';
+import { ListeUserComponent } from './liste-user/liste-user.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
+
 
 const routes: Routes = [
   {
@@ -22,15 +26,27 @@ const routes: Routes = [
      path: 'navbar',
     component:NavbarComponent
   },
-  {
-     path: '**',
-    component:Page404Component
-  },
+  // {
+  //    path: '**',
+  //   component:Page404Component
+  // },
 
   {
-    path: 'next-page',
-   component:NextPageComponent
+    path: 'listUser',
+   component:ListeUserComponent
  },
+ {
+  path: 'addUser',
+ component:AddUserComponent
+},
+{
+  path: 'updateUser/:index',
+ component:UpdateUserComponent
+},
+{
+  path: 'next-page',
+ component:NextPageComponent
+},
 ];
 
 @NgModule({
